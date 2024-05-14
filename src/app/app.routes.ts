@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import { PatientListComponent } from './modules/patients/pages/patient-list/patient-list.component';
-
 export const routes: Routes = [
   {
     path: '',
@@ -22,6 +21,20 @@ export const routes: Routes = [
     loadChildren: () =>
       import('./modules/patients/patients.module').then(
         (m) => m.PatientsModule
+      ),
+  },
+  {
+    path: 'nutritionists',
+    loadChildren: () =>
+      import('./modules/nutritionists/nutritionists.module').then(
+        (m) => m.NutritionistsModule
+      ),
+  },
+  {
+    path: 'appointments',
+    loadChildren: () =>
+      import('./modules/appointments/appointments.module').then(
+        (m) => m.AppointmentsModule
       ),
   },
 ];

@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-patient-create',
-  templateUrl: './patient-create.component.html',
-  styleUrl: './patient-create.component.css',
+  selector: 'app-nutritionist-create',
+  templateUrl: './nutritionist-create.component.html',
+  styleUrl: './nutritionist-create.component.css',
 })
-export class PatientCreateComponent {
+export class NutritionistCreateComponent {
   onRegister($event: SubmitEvent) {
     throw new Error('Method not implemented.');
   }

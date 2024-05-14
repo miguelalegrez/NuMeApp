@@ -10,23 +10,23 @@ import { SharedRoutingModule } from '../../shared/shared-routing.module';
 import { MatIconModule } from '@angular/material/icon';
 import { SharedModule } from '../../shared/shared.module';
 import { MatButtonModule } from '@angular/material/button';
-import { PatientDetailComponent } from './pages/patient-detail/patient-detail.component';
-import { PatientListComponent } from './pages/patient-list/patient-list.component';
-import { PatientsRoutingModule } from './patients.routing.module';
-import { PatientsManagementComponent } from './pages/patient-management/patients-management.component';
-import { PatientCreateComponent } from './pages/patient-create/patient-create.component';
-import { ReactiveFormsModule } from '@angular/forms';
+
+import { FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { AuthModule } from '../auth/auth.module';
+import { NutritionistCreateComponent } from './pages/nutri-create/nutritionist-create/nutritionist-create.component';
+import { NutritionistDetailComponent } from './pages/nutri-detail/nutritionist-detail/nutritionist-detail.component';
+import { NutritionistManagementComponent } from './pages/nutri-management/nutritionist-management/nutritionist-management.component';
+import { NutritionistListComponent } from './pages/nutri-list/nutritrionist-list/nutritionist-list.component';
+import { NutritionistsRoutingModule } from './nutritionists.routing.module';
 
 @NgModule({
   declarations: [
-    PatientListComponent,
-    PatientDetailComponent,
-    PatientsManagementComponent,
-    PatientCreateComponent,
+    NutritionistCreateComponent,
+    NutritionistDetailComponent,
+    NutritionistManagementComponent,
+    NutritionistListComponent,
   ],
   imports: [
-    PatientsRoutingModule,
     SharedModule,
     CommonModule,
     MatTableModule,
@@ -39,6 +39,7 @@ import { AuthModule } from '../auth/auth.module';
     MatIconModule,
     ReactiveFormsModule,
     AuthModule,
+    NutritionistsRoutingModule,
   ],
 })
-export class PatientsModule {}
+export class NutritionistsModule {}

@@ -1,0 +1,26 @@
+<app-back-button-page-container [backUrl]="'appointments/list'">
+  <ng-container>
+    <div class="mb-8">
+      <p class="text-center text-3xl">Crear nueva cita</p>
+    </div>
+    <form
+      [formGroup]="createForm"
+      (submit)="onCreate($event)"
+      class="flex flex-col w-96 mx-auto"
+    >
+      <mat-form-field>
+        <mat-label>Nombre del paciente</mat-label>
+        <input matInput placeholder="Nombre del paciente" />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Fecha</mat-label>
+        <input matInput placeholder="Fecha" />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Descripción</mat-label>
+        <textarea matInput placeholder="Descripción"></textarea>
+      </mat-form-field>
+      <button mat-flat-button color="primary">Crear cita</button>
+    </form>
+  </ng-container>
+</app-back-button-page-container>

@@ -8,17 +8,24 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { SearchComponent } from './components/search-box/search.component';
 import { UserCreationBoxComponent } from './components/user-creation-box/user-creation-box.component';
+import { BackButtonPageContainerComponent } from './components/back-button-page-container/back-button-page-container.component';
 
 @NgModule({
   declarations: [SearchComponent, UserCreationBoxComponent],
   imports: [
+    FormsModule,
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
     MatButtonModule,
     MatIconModule,
     CommonModule,
+    BackButtonPageContainerComponent,
   ],
-  exports: [SearchComponent, UserCreationBoxComponent],
+  exports: [
+    SearchComponent,
+    UserCreationBoxComponent,
+    BackButtonPageContainerComponent,
+  ],
 })
 export class SharedModule {}

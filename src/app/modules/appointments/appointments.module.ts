@@ -10,23 +10,24 @@ import { SharedRoutingModule } from '../../shared/shared-routing.module';
 import { MatIconModule } from '@angular/material/icon';
 import { SharedModule } from '../../shared/shared.module';
 import { MatButtonModule } from '@angular/material/button';
-import { PatientDetailComponent } from './pages/patient-detail/patient-detail.component';
-import { PatientListComponent } from './pages/patient-list/patient-list.component';
-import { PatientsRoutingModule } from './patients.routing.module';
-import { PatientsManagementComponent } from './pages/patient-management/patients-management.component';
-import { PatientCreateComponent } from './pages/patient-create/patient-create.component';
+
 import { ReactiveFormsModule } from '@angular/forms';
 import { AuthModule } from '../auth/auth.module';
+import { AppointmentsRoutingModule } from './appointments.routing.module';
+import { AppointmentsCreateComponent } from './pages/appoint-create/appointments-create/appointments-create.component';
+import { AppointmentsDetailComponent } from './pages/appoint-detail/appointments-detail/appointments-detail.component';
+import { AppointmentsManagementComponent } from './pages/appoint-management/appointments-management/appointments-management.component';
+import { BackButtonPageContainerComponent } from '../../shared/components/back-button-page-container/back-button-page-container.component';
+import { AppointmentsListComponent } from './pages/appoint-list/appointments-list/appointments-list.component';
 
 @NgModule({
   declarations: [
-    PatientListComponent,
-    PatientDetailComponent,
-    PatientsManagementComponent,
-    PatientCreateComponent,
+    AppointmentsCreateComponent,
+    AppointmentsDetailComponent,
+    AppointmentsManagementComponent,
+    AppointmentsListComponent,
   ],
   imports: [
-    PatientsRoutingModule,
     SharedModule,
     CommonModule,
     MatTableModule,
@@ -39,6 +40,8 @@ import { AuthModule } from '../auth/auth.module';
     MatIconModule,
     ReactiveFormsModule,
     AuthModule,
+    AppointmentsRoutingModule,
+    BackButtonPageContainerComponent,
   ],
 })
-export class PatientsModule {}
+export class AppointmentsModule {}
