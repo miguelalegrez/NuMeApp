@@ -1,0 +1,23 @@
+# NuMeApp - Full Stack Application
+
+Este proyecto es una aplicación full stack que utiliza Java Spring Boot para el backend y Angular para el frontend. También utiliza MongoDB como base de datos. A continuación, se describen los pasos necesarios para instalar Docker y ejecutar la aplicación.
+
+## Prerrequisitos
+
+Antes de comenzar, asegúrate de tener los siguientes programas instalados en tu sistema:
+
+- [Docker](https://www.docker.com/get-started) (versión 20.10.7 o superior)
+- [Docker Compose](https://docs.docker.com/compose/install/) (versión 1.27.4 o superior)
+
+## Instalación de Docker
+
+### Windows
+
+1. Descarga e instala Docker Desktop desde [aquí](https://hub.docker.com/editions/community/docker-ce-desktop-windows).
+2. Sigue las instrucciones del instalador.
+3. Asegúrate de habilitar Docker en el menú de configuración.
+4. Verifica la instalación abriendo una terminal (PowerShell o CMD) y ejecutando:
+   ```sh
+   docker --version
+   docker-compose --version
+   ```
